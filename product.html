@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!-- 
+        Student Name: Kagiso Cacius Mabusela
+        File Name: product.html
+        Date: 2022/05/22
+-->
+<!-- Please note, if you see the words "Brand Recognition Co." - note that this is a business that I'm creating that will
+    design free websites for local businesses. I randomly included the name (Brand Recognition Co.) in this website's design as a vision board.
+    Thus, in my first submitted assignment I forgot to remove the "Designed by Brand Recognition Co." in all the footers.
+    I am mentioning this because I don't want any troubles of plagiarism. This website is solely desgined by I, Kagiso Cacius Mabusela.
+-->
+
+<html lang="en">
+<head>
+	<title>Bosch Car Service</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/bcs_logo.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/cropped-favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/cropped-favicon-180x180.png">
+    <link rel="icon" sizes="192x192" href="images/cropped-favicon-192x192.png">
+
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/19f2702713.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body id="resetValues" onload="addingProdToCart()">
+    <div id="wrapper">
+        <header>
+            <!-- MOBILE HEADER CONTENT -->
+            <div id="mobile-header">
+                <!-- bosch logo -->
+                <div class="bsc-container">
+                    <a href="index.html" class="bsc-box">
+                        <img src="images/bcs_logo.png" alt="Bosch Car Service a proud partner of FST Auto Service" class="bsc-logo">
+                    </a>
+                </div>
+    
+                <!-- fst logo -->
+                <div class="fst-container">
+                    <a href="index.html" class="fst-box">
+                        <img src="images/fst.jpg" alt="Proudly partnered with FST Auto Service" class="fst-logo">
+                    </a>
+                </div>
+
+                <!-- Mobile Nav -->
+                <nav class="nav-box">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://boschcarsa.co.za/book-a-service/" class="nav-link">Book Now</a>
+                        </li>
+                    </ul>
+        
+                    <div class="hamburger-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+                
+        
+            </div>
+
+            <!-- TABLET-DESKTOP HEADER CONTENT -->
+            <div id="tablet-desktop-header">
+                <div id="first-header">
+                    <!-- partnership text -->
+                    <div id="partner">
+                        <h2>Proud partners of Bosch Car Service</h2>
+                    </div>
+
+                    <!-- fst logo -->
+                    <div class="fst-container">
+                        <a href="index.html" class="fst-box">
+                            <img src="images/fst.jpg" alt="Proudly partnered with FST Auto Service" class="fst-logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="second-header">
+                    <!-- bosch logo -->
+                    <div class="bsc-container">
+                        <a href="index.html" class="bsc-box">
+                            <img src="images/bcs_logo.png" alt="" class="bsc-logo">
+                        </a>
+                    </div>
+                    
+                    <!-- Tablet-Desktop Nav -->
+                    <nav class="tablet-desktop-nav-box">                 
+                        <ul class="td-nav-menu">
+                            <li class="td-nav-item">
+                                <a href="index.html" class="td-nav-link">Home</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="about.html" class="td-nav-link">About Us</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="product.html" class="td-nav-link">Services</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="contact.html" class="td-nav-link">Contact Us</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="https://boschcarsa.co.za/book-a-service/" class="td-nav-link">Book Now</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+         <!-- Hero Image -->
+         <div id="hero-image">
+            <!-- <img src="images/wsh-scaled.jpg" alt="Hero image of a bosch mechanic riding a skateboard with a battery on his hand"> -->
+            <img src="images/bcs_2.jpg" alt="Bosch Car Service Board">
+            <div id="hero-content">
+                <h1>Mobility is in our genes.</h1>
+            </div>
+        </div>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main>
+            <p id="product-entry">You can now book online for a service or order car parts with a delivery option. <br>See below.</p>
+            <!-- Products -->
+            <form id="products" name="products" method="get" action="formsubmit.html">
+                <h2 id="services_heading" style="width: 100%;">Our Products</h2>
+                <div class="product"> 
+                    <img src="images/s5_battery.jpg" alt="">
+                    <div class="product-content">
+                        <h4>S5 Batteries</h4>
+                        <p class="price">R4 831,89</p>
+                        <p>The Bosch S5 Battery is the powerhouse for recent car models with high electronic demand that 
+                            <span class="read-more-text">provides optimum starting power and long service life.</span>
+                                <br><br>
+                            <span class="read-more-btn">Read more...</span>
+                        </p>
+                        <input type="hidden" name="s5Battery_val" value="4832.00">
+                        <input type="button" value="Add to cart" class="product-btn" name="s5Battery">
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/premium_oil.jpg" alt="">
+                    <div class="product-content">
+                        <h4>Premium Oil Filters</h4>
+                        <p class="price">R283,27</p>
+                        <p>Premium engine performance requires a premium oil filter that protects your engine by keeping 
+                            <span class="read-more-text">harmful particles and dirt out.</span>
+                                <br><br>
+                            <span class="read-more-btn">Read more...</span>
+                        </p>
+                        <input type="hidden" name="premiumOil_val" value="283.27">
+                        <input type="button" value="Add to cart" class="product-btn" name="premiumOil">
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/qcpads.jpg" alt="">
+                    <div class="product-content">
+                        <h4>QuietCast™ Premium Disc Brake Pads</h4>
+                        <p class="price">R1 480,00</p>
+                        <p>Developed for the generalist who works on all makes and models all day long, this premium line 
+                            <span class="read-more-text">raises aftermarket brake pad technology to a whole new level.</span>
+                                <br><br>
+                            <span class="read-more-btn">Read more...</span>
+                        </p>
+                        <input type="hidden" name="brakePads_val" value="1480.00">
+                        <input type="button" value="Add to cart" class="product-btn" name="brakePads">
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/steering_gear.jpg" alt="">
+                    <div class="product-content">
+                        <h4>Steering Gear</h4>
+                        <p class="price">R19 958,67</p>
+                        <p>Bosch power steering gears designed for an identical replacement of the original 
+                            <span class="read-more-text">equipment. Range consisting from classic rack and pinion to the state of the art electric and active steering systems.</span>
+                                <br><br>
+                            <span class="read-more-btn">Read more...</span>
+                        </p>
+                        <input type="hidden" name="steeringGear_val" value="19958.67">
+                        <input type="button" value="Add to cart" class="product-btn" name="steeringGear">
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="service-entry">
+                <p>We offer everything you could possibly need for your vehicle - from inspection, service and repairs right through to customised retrofitting work. 
+                    We ensure no loss of manufacturer's warranty coverage for your vehicle.</p>
+            </div>
+
+            <!-- GRID -->
+            <div class="grid-2-col">
+                <!-- Services -->
+                <section class="container">
+                    <h2 id="services_heading">Our Services</h2>
+                    <div id="cards">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/air_conditioning.jpg" alt="Air conditioning image provided as a service">
+                            </div>
+                            <div class="card-content">
+                                <h3>Air conditioning</h3>
+                                <p>Air conditioning is an important part of our driving comfort these days, ensuring a pleasant and healthy environment. So, it's a nuisance to turn on the aircon and find that it's not cooling or filtering as effectively as you would like. In fact, a poorly 
+                                    <span class="read-more-text">maintained system may even contribute to a less-than-fresh atmosphere in the cabin. The answer is a yearly air conditioning service.</span>
+                                    <br><br>
+                                    <span class="read-more-btn">Read more...</span>
+                                </p>
+                                <a href="#" class="card-button" onclick="redirect('form.html')">Book Now <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/oil_image.jpg" alt="Oil and Filter Change image provided as a service">
+                            </div>
+                            <div class="card-content">
+                                <h3>Oil &amp; Filter Change</h3>
+                                <p>An oil and filter change might seem like a routine service, but requesting it from Bosch Car Service has some major advantages. High-Quality oil and filter used, responsible oil disposal, enhances the car’s service record. Modern motor oil is a miracle of 
+                                    <span class="read-more-text">engineering that has a host of positive effects on your engine - lubrication is just the beginning. But you do have to get an oil and filter change from time to time to avoid experiencing serious problems with your vehicle.</span>
+                                    <br><br>
+                                    <span class="read-more-btn">Read more...</span>
+                                </p>
+                                <a href="form.html" class="card-button" onclick="redirect('form.html')">Book Now <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/engine_service.jpg" alt="Engine & Diagnostic image provided as a service">
+                            </div>
+                            <div class="card-content">
+                                <h3>Engine &amp; Car Diagnostic Check</h3>
+                                <p>An engine diagnostic check requires no disassembly or physical inspection of components, so the whole thing should take no more than one hour. The Bosch Car Service staff will then provide you with a full report showing what problems your vehicle 
+                                    <span class="read-more-text">has – if any. Because this information is based on raw data from multiple points within the engine itself, you can have absolute confidence in the trustworthiness of the diagnosis.</span>
+                                    <br><br>
+                                    <span class="read-more-btn">Read more...</span>
+                                </p>
+                                <a href="form.html" class="card-button" onclick="redirect('form.html')">Book Now <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/brake_service_image_640w_360h.jpg" alt="Break Repair and Maintenance image provided as a service">
+                            </div>
+                            <div class="card-content">
+                                <h3>Break Repair &amp; Maintenance</h3>
+                                <p>During a brake check, our mechanics will carefully inspect all wearable parts including brake pads, brake discs and brake fluid. To check the brake pads and discs, specialist equipment will be used to take accurate measurements of these components. 
+                                    <span class="read-more-text">If the measurements do not meet with those specified for the vehicle by the manufacturer, the parts will need to be replaced.
+                                        The brake fluid will also be checked to determine whether it needs replacement due to ageing or contamination. 
+                                        Following a brake check, you will be provided with a detailed report on the condition of your brakes together with a quotation for any work that might be required.
+                                        All brake replacement parts and materials used are of high quality and in keeping with the manufacturer's requirements.</span>
+                                    <br><br>
+                                    <span class="read-more-btn">Read more...</span>
+                                </p>
+                                <a href="form.html" class="card-button" onclick="redirect('form.html')">Book Now <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/battery_guide_image_640w_360h.jpg" alt="Battery Check image provided as a service">
+                            </div>
+                            <div class="card-content">
+                                <h3>Battery Check</h3>
+                                <p>The check will begin with a visual assessment of the battery's physical condition. Any sign of damage is obviously a serious issue, but the Bosch Car Service engineer carrying out the battery check will also pay close attention to the terminals. 
+                                    
+                                    <span class="read-more-text">If these are corroded in any way, it may mean that the power cables will not be able to form a good connection. In that case, it's usually best to replace the battery.
+                                        <br> <br> The next stage is to check whether voltage of the battery is high enough to start the car. At least 75% capacity is acceptable. But it is also important to check whether that battery can actually deal with the load imposed on it when it has to crank an engine. Specialist equipment can measure that very reliably.         
+                                        <br> <br> Finally, it is necessary to check how well the battery charges. This is particularly important if it initially showed a low voltage - the charging test will determine whether that was a sign of problems or an effect of normal circumstances such as driving for a short period of time.</span>
+                                    <br><br>
+                                    <span class="read-more-btn">Read more...</span>
+                                </p>
+                                <a href="form.html" class="card-button" onclick="redirect('form.html')">Book Now <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/tires.jpg" alt="Tyre image provided as a service">
+                            </div>
+                            <div class="card-content">
+                                <h3>Tyre Service</h3>
+                                <p>The real skill in tire fitting is seen in the wheel balancing and alignment processes. As you would expect, Bosch Car Service tire changers bring a high level of training and care to both activities. Balancing involves attaching weights to the rim of a wheel. 
+                            
+                                    <span class="read-more-text"> It is intended to ensure that the wheel has an even distribution of weight around its circumference. 
+                                        <br> If you drive with poorly balanced wheels, you will experience a vibrating sensation and the tires will be harmed. Wheel alignment may also be recommended as part of a tire fitting, for example if the old tires had a characteristic wear pattern. You should also ask about it if your steering does not behave normally. When your wheels are aligned with care, you will almost certainly see an improvement in fuel economy as well.</span>
+                                    <br><br>
+                                    <span class="read-more-btn">Read more...</span>
+                                </p>
+                                <a href="form.html" class="card-button" onclick="redirect('form.html')">Book Now <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/car_service.jpg" alt="bosch technicians ready to provide a service image">
+                            </div>
+                            <div class="card-content">
+                                <h3>Car Service</h3>
+                                <p>Firstly, when you request servicing from Bosch Car Service, you can expect absolute thoroughness and attention to detail. What is included in a car service? That will partly be determined by the service schedule of your vehicle, but in general it will cover 
+                            
+                                    <span class="read-more-text">a huge range of checks  to systems that are related to safety, reliability and performance. The Bosch Car Service staff will replace any parts that are broken or worn out and will top up any fluids that need it. Oil and filter replacement are standard, which contributes to good performance.
+                                        <br> <br> Secondly, Bosch Car Service have an unrivaled knowledge of manufacturers' guidelines for the steps involved in servicing. They will never deviate from them or cut corners in any way. In addition, they will always use genuine spare parts and high-quality materials.
+                                        <br> <br> Finally, Bosch Car Service are defined by their integrity. With other car servicing offers you may find yourself suspecting that problems have been identified unnecessarily, but Bosch Car Service always has the customer's best interests at heart.</span>
+                                    <br><br>
+                                    <span class="read-more-btn">Read more...</span>
+                                </p>
+                                <a href="form.html" class="card-button">Book Now <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </section>
+
+                
+
+            </div>
+            
+            <!-- Services Full List -->
+            <table id="serv-table">
+                <caption>Full list of all our services</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Car Servicing</th>
+                        <th colspan="2">Mechanical Repairs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engine oil change</td>
+                        <td>All Mechanical Repairs</td>
+                    </tr>
+                    <tr>
+                        <td>Oil filter change</td>
+                        <td>Engines</td>
+                    </tr>
+                    <tr>
+                        <td>Air filter change</td>
+                        <td>Gearboxes</td>
+                    </tr>
+                    <tr>
+                        <td>Spark plugs</td>
+                        <td>Diff repairs</td>
+                    </tr>
+                    <tr>
+                        <td>Fuel filter</td>
+                        <td>Master cylinder</td>
+                    </tr>
+                    <tr>
+                        <td>Full safety check</td>
+                        <td>Turbo repairs</td>
+                    </tr>
+                    <tr>
+                        <td>Handbrake adjustment</td>
+                        <td>Exhaust systems</td>
+                    </tr>
+                    <tr>
+                        <td>Fluid level top-up</td>
+                        <td>Shock absorbers</td>
+                    </tr>
+                    <tr>
+                        <td>Resetting service indicator</td>
+                        <td>Toothed belt replacement</td>
+                    </tr>
+                    <tr>
+                        <td>Diagnostic scan to diagnose your car's health.</td>
+                        <td>Wheel bearing noise</td>
+                    </tr>
+                    <tr>
+                        <td>Adjustment of handbrake</td>
+                        <td>Brake noise</td>
+                    </tr>
+                    <tr>
+                        <td>Resetting of service light  & much more.</td>
+                        <td>Steering problem  & much more.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <section id="accreditations">
+                <h2 class="underline center">Accreditations</h3>
+                <div class="credits">
+                    <img class="credit" src="images/aa-logo.png" alt="We are AA accredited">
+                    <img class="credit" src="images/rmi-logo.png" alt="We are RMI accredited">
+                </div>
+            </section>
+
+
+        </main>
+    
+        <!-- Bookmark: scrollUp -->
+        <!-- <a href="#hero-image" id="go-up">&UpArrow;</a> -->
+
+        <!-- Cart -->
+        <a href="form.html" id="go-up" onclick="confirmClicked('orderItem', true)">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="counter"></span>
+        </a>
+        
+
+        <!-- The footer content of the webpage -->
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2022. All Rights Reserved.</p>
+                <p>Email:<a href="mailto:forwardfitness@club.net">boschcarservice.mailman</a></p>
+            </div>
+
+            <div class="social">
+                <a href="https://web.facebook.com/FstAutoServices?_rdc=1&_rdr" target="_blank">
+                    <img src="images/f_logo.png" alt="Facebook's logo">
+                </a>
+                <a href="https://twitter.com/auto_fst" target="_blank">
+                    <img src="images/t_logo.png" alt="Twitter's logo">
+                </a>
+            </div>
+
+            <div class="designer">
+                <p>Designed By Brand Recognition Co.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

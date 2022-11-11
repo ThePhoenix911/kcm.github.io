@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!-- 
+        Student Name: Kagiso Cacius Mabusela
+        File Name: index.html
+        Date: 2022/05/22
+-->
+<!-- Please note, if you see the words "Brand Recognition Co." - note that this is a business that I'm creating that will
+    design free websites for local businesses. I randomly included the name (Brand Recognition Co.) in this website's design as a vision board.
+    Thus, in my first submitted assignment I forgot to remove the "Designed by Brand Recognition Co." in all the footers.
+    I am mentioning this because I don't want any troubles of plagiarism. This website is solely desgined by I, Kagiso Cacius Mabusela.
+-->
+
+<html lang="en">
+<head>
+	<title>Bosch Car Service</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/bcs_logo.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/cropped-favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/cropped-favicon-180x180.png">
+    <link rel="icon" sizes="192x192" href="images/cropped-favicon-192x192.png">
+
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/19f2702713.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="custSlideshow()">
+    <div id="wrapper">        
+        <header>
+            <!-- MOBILE HEADER CONTENT -->
+            <div id="mobile-header">
+                <!-- bosch logo -->
+                <div class="bsc-container">
+                    <a href="index.html" class="bsc-box">
+                        <img src="images/bcs_logo.png" alt="Bosch Car Service a proud partner of FST Auto Service" class="bsc-logo">
+                    </a>
+                </div>
+    
+                <!-- fst logo -->
+                <div class="fst-container">
+                    <a href="index.html" class="fst-box">
+                        <img src="images/fst.jpg" alt="Proudly partnered with FST Auto Service" class="fst-logo">
+                    </a>
+                </div>
+
+                <!-- Mobile Nav -->
+                <nav class="nav-box">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://boschcarsa.co.za/book-a-service/" class="nav-link">Book Now</a>
+                        </li>
+                    </ul>
+        
+                    <div class="hamburger-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+                
+        
+            </div>
+
+            <!-- TABLET-DESKTOP HEADER CONTENT -->
+            <div id="tablet-desktop-header">
+                <div id="first-header">
+                    <!-- partnership text -->
+                    <div id="partner">
+                        <h2>Proud partners of Bosch Car Service</h2>
+                    </div>
+
+                    <!-- fst logo -->
+                    <div class="fst-container">
+                        <a href="index.html" class="fst-box">
+                            <img src="images/fst.jpg" alt="Proudly partnered with FST Auto Service" class="fst-logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="second-header">
+                    <!-- bosch logo -->
+                    <div class="bsc-container">
+                        <a href="index.html" class="bsc-box">
+                            <img src="images/bcs_logo.png" alt="" class="bsc-logo">
+                        </a>
+                    </div>
+                    
+                    <!-- Tablet-Desktop Nav -->
+                    <nav class="tablet-desktop-nav-box">                 
+                        <ul class="td-nav-menu">
+                            <li class="td-nav-item">
+                                <a href="index.html" class="td-nav-link">Home</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="about.html" class="td-nav-link">About Us</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="product.html" class="td-nav-link">Services</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="contact.html" class="td-nav-link">Contact Us</a>
+                            </li>
+                            <li class="td-nav-item">
+                                <a href="https://boschcarsa.co.za/book-a-service/" class="td-nav-link">Book Now</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+  
+        <!-- Hero Image -->
+        <div id="hero-image">
+            <img src="images/bcs_2.jpg" alt="Bosch Car Service Board">
+            <div id="hero-content">
+                <h1>Mobility is in our genes.</h1>
+            </div>
+        </div>
+
+        <!-- Slideshow -->
+        <!-- <section id="img-slideshow">
+            <div id="slidebox">
+               <div id="slides">
+                  <img src="images/bcs_2.jpg" alt="Sky Pond (Rocky Mountain National Park)" class="active">
+                  <img src="images/services_mechanical.jpg" alt="Buffalo on the Plains (South Dakota)">
+                  <img src="images/bcs_2.jpg" alt="Garden of the Gods (Colorado Springs)">
+                  <img src="images/skateboard22.jpg" alt="Hero image of a bosch mechanic riding a skateboard with a battery on his hand">         
+                  <img src="images/f_mask.jpg" alt="Double Rainbow (Colorado National Monument)">      
+               </div>
+
+               <a class="prev">&#10094;</a>
+               <a class="next">&#10095;</a>
+            </div>
+      
+            <div id="caption">Garden of the Gods (Colorado Springs)</div>
+      
+         </section> -->
+
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main>
+
+            <!-- "Why users should choose us?" - Content Area -->
+            <div id="why-us-content">
+                <!-- Mobile: Why us? -->
+                <section id="why-us" class="mobile">
+                    <h2 class="underline" id="why-heading">Why Choose Us</h2>
+                    <p><span class="tick">&#10003;</span> Technicians trained by Bosch on latest<br> <span style="display: block; margin-left: 5.4%; margin-top: 10px;"> automotive technology.</span></p>
+                    <p><span class="tick">&#10003;</span> Affordable quality you can trust.</p>
+                    <p><span class="tick">&#10003;</span> Service without invalidating warranty.</p>
+                    <p><span class="tick">&#10003;</span> Service all makes &amp; models.</p>
+                    
+                    <br>
+                </section>
+
+                <!-- tablet-desktop: Why us? -->
+                <div id="tablet-desktop-why-us" class="tablet-desktop">
+                    <h2>Why Choose Us?</h2>
+                    <div id="td-why-us-boxes">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/tyres.png" alt="tyre icon">
+                                <h3>Genuine Bosch Parts</h3>
+                            </div>
+                            <div class="flip-box-back">
+                                <p>Bosch's extensive range of genuine auto parts set the benchmark for quality and reliability, offering a far more dependable alternative to generic parts which come standard with a 12-month warranty.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/renew.png" alt="fresh car icon">
+                                <h3>We offer</h3>
+                            </div>
+                            <div class="flip-box-back">
+                                <p>Get a 12-month warranty on genuine Bosch parts, a 6-month or 10 000km guarantee on our workmanship, and state-of-the-art diagnostics performed by our highly skilled technicians..</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img src="images/hope-cert.png" alt="Certificate icon">
+                                    <h3>Warranty</h3>
+                                </div>
+                                <div class="flip-box-back">
+                                    <p>We Service all makes &amp; models. without invalidating warranty.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- "High quality service for your car" - Content Area -->
+            <article class="entry-content">
+                <h2>High quality service for your car</h2>
+                <ul id="entry-text">
+                    <li>Bosch Car Service - the car experts.</li>
+                    <li>This is the right address for outstanding service quality for your car. <br> Whether you are looking for advice, repair or service work we can offer the full package - coupled with the unique expertise of Bosch,<br> the world's leading original equipment supplier for virtually all makes.</li>
+                    <li>The experts from Bosch Car Service are fully equipped to deal with the latest automotive technology in vehicles of all makes and keep them in perfect working order so,<br> your car is always in the best possible hands when you take it to Bosch Car Service for maintenance and repair.</li>
+                    <li>For everything your car needs!</li>
+                </ul>             
+            </article>    
+        
+            <!-- Services List -->
+            <h2 id="serv_heading" class="underline">Our Services</h2>
+            <section class="grid-boxes-4-col">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Air conditioning</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Air conditioning</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Oil &amp; Filter Change</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Oil &amp; Filter Change</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Engine &amp; Car Diagnostic Check</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Engine &amp; Car Diagnostic Check</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Break Repair &amp; Maintenance</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Break Repair &amp; Maintenance</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Tyre Service</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Tyre Service</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Mechanical Repairs</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Mechanical Repairs</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Car Service</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Car Service</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <p>Battery Service</p>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Battery Service</h3>
+                            <a href="product.html">Read More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mini Contact us - Content Area -->
+            <div id="call-us">
+                <p>Got a question? Call us on now <a href="tel:0119332114">(011) 933 2114</a></p>
+            </div>
+
+
+            <!-- Customer Reviews -->
+            <div class="slideshow">
+                <h2 class="underline">Customer Reviews</h2>
+                <div class="c_review slide">
+                    <div class="c_header_box">
+                        <img class="round_img" src="images/oil_image.jpg" alt="customer's profile picture">
+                    <div class="c_head">
+                        <span class="c_name">Kagiso Mabusela</span>
+                        <span class="c_date">1 day ago</span>
+                    </div>
+                    <span class="ratings">&starf;&starf;&starf;&starf;&starf;</span>
+                    </div>
+                    <p>For the first time this year my car is working without any problems. <br> There where times were I thought of selling the car because it was constantly giving me problem, this was until I decided to go to Bosch - now my car feels new again!
+                    </p>
+                </div>
+                <div class="c_review slide">
+                    <div class="c_header_box">
+                        <img class="round_img" src="images/electronic.jpg" alt="customer's profile pic">
+                    <div class="c_head">
+                        <span class="c_name">Marcus Ford</span>
+                        <span class="c_date">1 day ago</span>
+                    </div>
+                    <span class="ratings">&starf;&starf;&starf;&star;&star;</span>
+                    </div>
+                    <p>For the first time this year my car is working without any problems. <br> There where times were I thought of selling the car because it was constantly giving me problem, this was until I decided to go to Bosch - now my car feels new again!
+                    </p>
+                </div>
+                <div class="c_review slide">
+                    <div class="c_header_box">
+                        <img class="round_img" src="images/about_us_our_partners_image_960w_540h.jpg" alt="customer's profile pic">
+                        <div class="c_head">
+                            <span class="c_name">Sipho Mandlakhe</span>
+                            <span class="c_date">1 day ago</span>
+                        </div>
+                        <span class="ratings">&starf;&starf;&starf;&starf;&star;</span>
+                    </div>
+                    <p>For the first time this year my car is working without any problems. <br> There where times were I thought of selling the car because it was constantly giving me problem, this was until I decided to go to Bosch - now my car feels new again!
+                    </p>
+                </div>
+                <div class="c_review slide">
+                    <div class="c_header_box">
+                        <img class="round_img" src="images/sm3.jpg" alt="customer's profile pic">
+                        <div class="c_head">
+                            <span class="c_name">Collen Peterson</span>
+                            <span class="c_date">1 day ago</span>
+                        </div>
+                        <span class="ratings">&starf;&starf;&starf;&starf;&starf;</span>
+                    </div>
+                    <p>For the first time this year my car is working without any problems. <br> There where times were I thought of selling the car because it was constantly giving me problem, this was until I decided to go to Bosch - now my car feels new again!
+                    </p>
+                </div>
+                
+                <div class="controls">
+                    <div class="left" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="right" onclick="plusDivs(1)">&#10095;</div>
+                    <div id="dots">
+                        <span class="dot" onclick="currentDiv(1)"></span>
+                        <span class="dot" onclick="currentDiv(2)"></span>
+                        <span class="dot" onclick="currentDiv(3)"></span>
+                        <span class="dot" onclick="currentDiv(4)"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Companies Accreditations -->
+            <section id="accreditations">
+                <h2 class="underline center">Accreditations</h2>
+                <div class="credits">
+                    <img class="credit" src="images/aa-logo.png" alt="We are AA accredited">
+                    <img class="credit" src="images/rmi-logo.png" alt="We are RMI accredited">
+                </div>
+            </section>
+
+            <!-- Operating Hours -->
+            <div id="table-box">
+                <table id="open-h">
+                    <caption>Operating Hours</caption>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>08:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>08:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>08:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>08:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>08:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td rowspan="2">Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    
+
+        
+        <!-- The footer content of the webpage -->
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2022. All Rights Reserved.</p>
+                <p>Email:<a href="mailto:forwardfitness@club.net">boschcarservice.mailman</a></p>
+            </div>
+
+            <div class="social">
+                <a href="https://web.facebook.com/FstAutoServices?_rdc=1&_rdr" target="_blank">
+                    <img src="images/f_logo.png" alt="Facebook's logo">
+                </a>
+                <a href="https://twitter.com/auto_fst" target="_blank">
+                    <img src="images/t_logo.png" alt="Twitter's logo">
+                </a>
+            </div>
+
+            <div class="designer">
+                <p>Designed By Brand Recognition Co.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

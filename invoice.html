@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- 
+        Student Name: Kagiso Cacius Mabusela
+        File Name: form.html
+        Date: 2022/05/22
+-->
+<!-- Please note, if you see the words "Brand Recognition Co." - note that this is a business that I'm creating that will
+    design free websites for local businesses. I randomly included the name (Brand Recognition Co.) in this website's design as a vision board.
+    Thus, in my first submitted assignment I forgot to remove the "Designed by Brand Recognition Co." in all the footers.
+    I am mentioning this because I don't want any troubles of plagiarism. This website is solely desgined by I, Kagiso Cacius Mabusela.
+-->
+
+<html lang="en">
+<head>
+	<title>Bosch Car Service</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/bcs_logo.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/cropped-favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/cropped-favicon-180x180.png">
+    <link rel="icon" sizes="192x192" href="images/cropped-favicon-192x192.png">
+
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/19f2702713.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload='call(), store("label", "retrieveOrderetails", "input", "submitOrder", "#retrieveOrderetails input", retrieveDetails), cardPayment()'>
+  <div id="wrapper">
+    <header>
+        <!-- MOBILE HEADER CONTENT -->
+        <div id="mobile-header">
+            <!-- bosch logo -->
+            <div class="bsc-container">
+                <a href="index.html" class="bsc-box">
+                    <img src="images/bcs_logo.png" alt="Bosch Car Service a proud partner of FST Auto Service" class="bsc-logo">
+                </a>
+            </div>
+
+            <!-- fst logo -->
+            <div class="fst-container">
+                <a href="index.html" class="fst-box">
+                    <img src="images/fst.jpg" alt="Proudly partnered with FST Auto Service" class="fst-logo">
+                </a>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav class="nav-box">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://boschcarsa.co.za/book-a-service/" class="nav-link">Book Now</a>
+                    </li>
+                </ul>
+    
+                <div class="hamburger-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            
+    
+        </div>
+
+        <!-- TABLET-DESKTOP HEADER CONTENT -->
+        <div id="tablet-desktop-header">
+            <div id="first-header">
+                <!-- partnership text -->
+                <div id="partner">
+                    <h2>Proud partners of Bosch Car Service</h2>
+                </div>
+
+                <!-- fst logo -->
+                <div class="fst-container">
+                    <a href="index.html" class="fst-box">
+                        <img src="images/fst.jpg" alt="Proudly partnered with FST Auto Service" class="fst-logo">
+                    </a>
+                </div>
+            </div>
+
+            <div id="second-header">
+                <!-- bosch logo -->
+                <div class="bsc-container">
+                    <a href="index.html" class="bsc-box">
+                        <img src="images/bcs_logo.png" alt="" class="bsc-logo">
+                    </a>
+                </div>
+                
+                <!-- Tablet-Desktop Nav -->
+                <nav class="tablet-desktop-nav-box">                 
+                    <ul class="td-nav-menu">
+                        <li class="td-nav-item">
+                            <a href="index.html" class="td-nav-link">Home</a>
+                        </li>
+                        <li class="td-nav-item">
+                            <a href="about.html" class="td-nav-link">About Us</a>
+                        </li>
+                        <li class="td-nav-item">
+                            <a href="product.html" class="td-nav-link">Services</a>
+                        </li>
+                        <li class="td-nav-item">
+                            <a href="contact.html" class="td-nav-link">Contact Us</a>
+                        </li>
+                        <li class="td-nav-item">
+                            <a href="https://boschcarsa.co.za/book-a-service/" class="td-nav-link">Book Now</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+  <!-- Hero Image -->
+  <div id="hero-image">
+      <!-- <img src="images/bcs_2.jpg" alt="Hero image of a bosch mechanic riding a skateboard with a battery on his hand"> -->
+      <img src="images/bcs_2.jpg" alt="Bosch Car Service Board">
+      <div id="hero-content">
+        <h1>Mobility is in our genes.</h1>
+      </div>
+  </div>
+
+
+    <!-- Use the main area to add the main content to the webpage -->
+    <main>
+        <h2 style="width: 100%;">Your Details:</h2>
+        <div id="retrieveOrderetails">
+        </div>
+        <form id="invoice" name="invoice" method="get" action="formsubmit.html">
+
+            <table id="orderTable">
+                <caption>Product Order</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Action</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="invoiceBody">
+
+                </tbody>
+            </table>
+
+            <h1 style="width: 100%; margin-top: 4em">Payment Form</h1>
+            <fieldset id="creditcard">
+                <legend>Credit Information</legend>
+
+                <label for="cardName" class="required_field">Name</label>
+                <input name="cardName" id="cardName" required type="text" />
+
+                <label class="required_field">Credit Card</label>
+                <fieldset id="cards">
+                    <label class="cardLabel">
+                        <input name="credit" value="amex" type="radio" required />               
+                        <span>American Express</span>
+                    </label>
+                            <label class="cardLabel">               
+                        <input name="credit" value="discover" type="radio" />
+                        <span>Discover</span>
+                    </label>
+                    <label class="cardLabel">                              
+                        <input name="credit" value="master" type="radio"  />
+                        <span>MasterCard</span>
+                    </label>
+                    <label class="cardLabel">                                    
+                        <input name="credit" value="visa" type="radio"  />
+                        <span>Visa</span>
+                    </label>
+                </fieldset>
+
+                <label for="cardNumber" class="required_field">Credit Card Number</label>
+                <input name="cardNumber" id="cardNumber" required type="text" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
+
+                <label for="expMonth" class="required_field">Expiration Date</label>
+                <select id="expMonth" name="expMonth">
+                    <option value="mm">mm</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span id="separator"> / </span>
+                <select id="expYear" name="expYear">
+                    <option value="yy">yy</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+
+                <label for="cvc" class="required_field">CVC</label>
+                <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text" />
+            </fieldset>
+
+            <!-- <input type="submit" id="submitPayBtn" value="Confirm Payment" /> -->
+            <input type="reset" value="Clear all" id="resetButton" class="btn" />
+            <input type="submit" id="submitOrderInvoice" value="Submit your order" class="btn" />
+
+        </form>
+    </main>
+    
+
+
+    <!-- The footer content of the webpage -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            <p>Email:<a href="mailto:forwardfitness@club.net">boschcarservice.mailman</a></p>
+        </div>
+
+        <div class="social">
+            <a href="https://web.facebook.com/FstAutoServices?_rdc=1&_rdr" target="_blank">
+                <img src="images/f_logo.png" alt="Facebook's logo">
+            </a>
+            <a href="https://twitter.com/auto_fst" target="_blank">
+                <img src="images/t_logo.png" alt="Twitter's logo">
+            </a>
+        </div>
+
+        <div class="designer">
+            <p>Designed By Brand Recognition Co.</p>
+        </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
